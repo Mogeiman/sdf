@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Page</title>
+    <link rel="stylesheet" href="home.css" />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      h1,
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+      .quiz {
+        background-color: #fff;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .title {
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
+      }
+      .question {
+        margin: 20px 0;
+        color: #555;
+      }
+      .correct {
+        background-color: #d4edda;
+      }
+      .incorrect {
+        background-color: #f8d7da;
+      }
+      #submit-button,
+      #retry-button {
+        display: none;
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+      }
+      #retry-button {
+        background-color: #28a745;
+      }
+      .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-identity">
+        <h1><a href="index.html">Hayaan Aqoon</a></h1>
+      </div>
+      <nav class="site-navigation">
+        <ul class="nav">
+          <li><a href="teacher.html?">Teacher</a></li>
+          <li><a href="student.html?">Student</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Student Page</h1>
+    <h2>Content</h2>
+    <div id="quiz-list"></div>
+    <div class="button-container">
+      <button id="submit-button">Submit</button>
+      <button id="retry-button">Try Again</button>
+    </div>
+    <script src="student.js"></script>
+  </body>
+</html>
