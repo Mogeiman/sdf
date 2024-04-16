@@ -1,4 +1,4 @@
-fetch("https://hayaanaqoon.onrender.com:3333/student/quizzes")
+fetch("https://hayaanaqoon.onrender.com/student/quizzes")
   .then((response) => {
     if (response.ok) {
       return response.json();
@@ -103,7 +103,7 @@ document
       });
       console.log(quizData, 'quizdata')
       // Send quiz data to the backend server
-      fetch("https://hayaanaqoon.onrender.com:3333/teacher/quizzes", {
+      fetch("https://hayaanaqoon.onrender.com/teacher/quizzes", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -149,7 +149,7 @@ function displayQuizzes(quizzes) {
     deleteButton.classList.add("deleteButton")
     deleteButton.textContent = "Delete";
     deleteButton.addEventListener("click", function () {
-      fetch(`https://hayaanaqoon.onrender.com:3333/teacher/quizzes/${quiz._id}`, {
+      fetch(`https://hayaanaqoon.onrender.com/teacher/quizzes/${quiz._id}`, {
         method: "DELETE",
       })
         .then((response) => {

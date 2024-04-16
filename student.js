@@ -1,7 +1,7 @@
 // student.js
 let quizzes = [];
 
-fetch("https://hayaanaqoon.onrender.com:3333/student/quizzes")
+fetch("https://hayaanaqoon.onrender.com/student/quizzes")
   .then((response) => {
     if (response.ok) {
       return response.json();

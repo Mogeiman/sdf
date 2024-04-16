@@ -60,7 +60,7 @@
 //       });
 //     });
 //     console.log(quizData, 'quu')
-//     fetch("https://hayaanaqoon.onrender.com:3333/teacher/quizzes", {
+//     fetch("https://hayaanaqoon.onrender.com/teacher/quizzes", {
 //       method: "POST",
 //       headers: {
 //         "Content-Type": "application/json",
